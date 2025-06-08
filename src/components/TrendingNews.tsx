@@ -1,10 +1,11 @@
-
 import { useState } from 'react';
 import { TrendingUp, Clock, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const TrendingNews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   const trendingStories = [
     {
@@ -83,6 +84,7 @@ const TrendingNews = () => {
             <div
               key={story.id}
               className="flex-none w-80 group cursor-pointer"
+              onClick={() => navigate(`/article/${story.id}`)}
             >
               <div className="relative overflow-hidden rounded-lg shadow-md group-hover:shadow-lg transition-shadow">
                 <div className="aspect-[16/10] overflow-hidden">
@@ -126,6 +128,7 @@ const TrendingNews = () => {
           <div
             key={story.id}
             className="flex space-x-4 p-4 border rounded-lg hover:bg-muted/50 transition-colors cursor-pointer group"
+            onClick={() => navigate(`/article/${story.id}`)}
           >
             <div className="relative">
               <span className="absolute -top-2 -left-2 bg-red-500 text-white w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center z-10">

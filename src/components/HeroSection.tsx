@@ -1,10 +1,11 @@
-
 import { useState, useEffect } from 'react';
 import { Clock, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   const featuredStories = [
     {
@@ -75,14 +76,21 @@ const HeroSection = () => {
               </div>
             </div>
             
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => navigate(`/article/${featuredStories[currentSlide].id}`)}
+            >
               പൂർണ്ണ വാർത്ത വായിക്കുക
             </Button>
           </div>
 
           {/* Hero Image */}
           <div className="relative">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+            <div 
+              className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl cursor-pointer"
+              onClick={() => navigate(`/article/${featuredStories[currentSlide].id}`)}
+            >
               <img
                 src={featuredStories[currentSlide].image}
                 alt={featuredStories[currentSlide].title}

@@ -1,12 +1,14 @@
-
 import { Clock, User, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 interface CategoryNewsProps {
   category: string;
 }
 
 const CategoryNews = ({ category }: CategoryNewsProps) => {
+  const navigate = useNavigate();
+
   // Sample data - in a real app, this would come from props or API
   const getNewsData = (category: string) => {
     const newsData: Record<string, any[]> = {
@@ -179,6 +181,7 @@ const CategoryNews = ({ category }: CategoryNewsProps) => {
             className={`group cursor-pointer ${
               index === 0 ? 'md:col-span-2 lg:col-span-1' : ''
             }`}
+            onClick={() => navigate(`/article/${article.id}`)}
           >
             <div className="space-y-4">
               <div className="aspect-[16/10] overflow-hidden rounded-lg">
