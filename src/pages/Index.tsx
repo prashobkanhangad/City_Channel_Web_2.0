@@ -42,11 +42,11 @@ const Index = () => {
           
           <div className="grid lg:grid-cols-4 gap-8">
             <div className="lg:col-span-3 space-y-12">
-              <CategoryNews category="Politics" />
-              <CategoryNews category="Technology" />
-              <CategoryNews category="Sports" />
-              <CategoryNews category="Entertainment" />
-              <CategoryNews category="Business" />
+              <CategoryNews category="രാഷ്ട്രീയം" />
+              <CategoryNews category="സാങ്കേതികവിദ്യ" />
+              <CategoryNews category="കായികം" />
+              <CategoryNews category="വിനോദം" />
+              <CategoryNews category="ബിസിനസ്" />
             </div>
             
             <div className="space-y-8">

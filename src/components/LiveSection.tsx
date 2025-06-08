@@ -7,21 +7,21 @@ const LiveSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const liveChannels = [
-    { id: 1, name: "NewsPortal Live", viewers: "12.5K", status: "LIVE" },
-    { id: 2, name: "Breaking News", viewers: "8.2K", status: "LIVE" },
-    { id: 3, name: "World Report", viewers: "5.7K", status: "SCHEDULED" }
+    { id: 1, name: "ന്യൂസ്പോർട്ടൽ ലൈവ്", viewers: "12.5K", status: "LIVE" },
+    { id: 2, name: "ബ്രേക്കിംഗ് ന്യൂസ്", viewers: "8.2K", status: "LIVE" },
+    { id: 3, name: "വേൾഡ് റിപ്പോർട്ട്", viewers: "5.7K", status: "SCHEDULED" }
   ];
 
   return (
     <section className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-3xl font-bold font-serif text-foreground">Live Coverage</h2>
-          <p className="text-muted-foreground mt-1">Watch breaking news as it happens</p>
+          <h2 className="text-3xl font-bold font-serif text-foreground">ലൈവ് കവറേജ്</h2>
+          <p className="text-muted-foreground mt-1">നടക്കുന്ന വാർത്തകൾ തത്സമയം കാണുക</p>
         </div>
         <div className="flex items-center space-x-2 text-sm">
           <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-          <span className="text-red-500 font-semibold">12,547 viewers</span>
+          <span className="text-red-500 font-semibold">12,547 കാഴ്ചക്കാർ</span>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ const LiveSection = () => {
               <div className="absolute top-4 left-4 flex items-center space-x-2">
                 <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
                   <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                  <span>LIVE</span>
+                  <span>ലൈവ്</span>
                 </div>
               </div>
 
@@ -73,16 +73,16 @@ const LiveSection = () => {
             </div>
             
             <div className="p-4 bg-card">
-              <h3 className="font-semibold text-lg">Global Climate Summit - Day 2</h3>
+              <h3 className="font-semibold text-lg">ആഗോള കാലാവസ്ഥാ ഉച്ചകോടി - ദിവസം 2</h3>
               <p className="text-muted-foreground text-sm mt-1">
-                Live coverage of the international climate summit with world leaders discussing unprecedented action plans.
+                അഭൂതപൂർവമായ പ്രവർത്തന പദ്ധതികൾ ചർച്ച ചെയ്യുന്ന ലോക നേതാക്കളുമായുള്ള അന്താരാഷ്ട്ര കാലാവസ്ഥാ ഉച്ചകോടിയുടെ തത്സമയ കവറേജ്.
               </p>
               <div className="flex items-center justify-between mt-3">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <Clock className="h-4 w-4" />
-                  <span>Started 2 hours ago</span>
+                  <span>2 മണിക്കൂർ മുമ്പ് ആരംഭിച്ചു</span>
                 </div>
-                <span className="text-sm font-medium">12,547 watching</span>
+                <span className="text-sm font-medium">12,547 പേർ കാണുന്നു</span>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ const LiveSection = () => {
 
         {/* Channel List */}
         <div className="space-y-4">
-          <h3 className="font-semibold text-lg">Available Channels</h3>
+          <h3 className="font-semibold text-lg">ലഭ്യമായ ചാനലുകൾ</h3>
           <div className="space-y-3">
             {liveChannels.map((channel) => (
               <div
@@ -102,16 +102,16 @@ const LiveSection = () => {
                     <h4 className="font-medium group-hover:text-primary transition-colors">
                       {channel.name}
                     </h4>
-                    <p className="text-sm text-muted-foreground">{channel.viewers} viewers</p>
+                    <p className="text-sm text-muted-foreground">{channel.viewers} കാഴ്ചക്കാർ</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     {channel.status === "LIVE" ? (
                       <>
                         <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                        <span className="text-red-500 text-sm font-semibold">LIVE</span>
+                        <span className="text-red-500 text-sm font-semibold">ലൈവ്</span>
                       </>
                     ) : (
-                      <span className="text-muted-foreground text-sm">Scheduled</span>
+                      <span className="text-muted-foreground text-sm">ഷെഡ്യൂൾ ചെയ്തത്</span>
                     )}
                   </div>
                 </div>

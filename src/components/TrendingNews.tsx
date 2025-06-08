@@ -9,56 +9,56 @@ const TrendingNews = () => {
   const trendingStories = [
     {
       id: 1,
-      title: "Tech Giants Announce Major AI Partnership",
-      excerpt: "Leading technology companies form alliance to develop ethical AI standards.",
-      time: "1 hour ago",
+      title: "ടെക് ഭീമൻമാർ പ്രധാന AI പങ്കാളിത്തം പ്രഖ്യാപിച്ചു",
+      excerpt: "ധാർമ്മിക AI മാനദണ്ഡങ്ങൾ വികസിപ്പിക്കുന്നതിനായി മുൻനിര സാങ്കേതിക കമ്പനികൾ സഖ്യം രൂപീകരിച്ചു.",
+      time: "1 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
-      category: "Technology",
+      category: "സാങ്കേതികവിദ്യ",
       trending: 1
     },
     {
       id: 2,
-      title: "Global Markets Reach Record Highs",
-      excerpt: "Stock markets worldwide celebrate strongest performance in five years.",
-      time: "2 hours ago",
+      title: "ആഗോള വിപണികൾ റെക്കോർഡ് ഉയരത്തിലെത്തി",
+      excerpt: "ലോകമെമ്പാടുമുള്ള ഓഹരി വിപണികൾ അഞ്ച് വർഷത്തിലെ ഏറ്റവും ശക്തമായ പ്രകടനം ആഘോഷിക്കുന്നു.",
+      time: "2 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop",
-      category: "Business",
+      category: "ബിസിനസ്",
       trending: 2
     },
     {
       id: 3,
-      title: "Revolutionary Medical Breakthrough",
-      excerpt: "Scientists develop new treatment showing 90% success rate in trials.",
-      time: "3 hours ago",
+      title: "വിപ്ലവകരമായ മെഡിക്കൽ മുന്നേറ്റം",
+      excerpt: "പരീക്ഷണങ്ങളിൽ 90% വിജയ നിരക്ക് കാണിക്കുന്ന പുതിയ ചികിത്സ ശാസ്ത്രജ്ഞർ വികസിപ്പിച്ചു.",
+      time: "3 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop",
-      category: "Health",
+      category: "ആരോഗ്യം",
       trending: 3
     },
     {
       id: 4,
-      title: "Space Mission Returns with Samples",
-      excerpt: "Historic space mission brings back unprecedented scientific data.",
-      time: "4 hours ago",
+      title: "ബഹിരാകാശ ദൗത്യം സാമ്പിളുകളുമായി തിരിച്ചെത്തി",
+      excerpt: "ചരിത്രപരമായ ബഹിരാകാശ ദൗത്യം അഭൂതപൂർവമായ ശാസ്ത്രീയ ഡാറ്റ തിരികെ കൊണ്ടുവരുന്നു.",
+      time: "4 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
-      category: "Science",
+      category: "ശാസ്ത്രം",
       trending: 4
     },
     {
       id: 5,
-      title: "International Trade Agreement Signed",
-      excerpt: "Major economies commit to sustainable trade practices.",
-      time: "5 hours ago",
+      title: "അന്താരാഷ്ട്ര വ്യാപാര കരാർ ഒപ്പിട്ടു",
+      excerpt: "പ്രധാന സമ്പദ്‌വ്യവസ്ഥകൾ സുസ്ഥിര വ്യാപാര രീതികൾക്ക് പ്രതിബദ്ധത പ്രകടിപ്പിക്കുന്നു.",
+      time: "5 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop",
-      category: "Politics",
+      category: "രാഷ്ട്രീയം",
       trending: 5
     },
     {
       id: 6,
-      title: "Olympic Games Preparation Update",
-      excerpt: "Latest developments in upcoming international sporting events.",
-      time: "6 hours ago",
+      title: "ഒളിമ്പിക് ഗെയിംസ് തയ്യാറെടുപ്പ് അപ്ഡേറ്റ്",
+      excerpt: "വരാനിരിക്കുന്ന അന്താരാഷ്ട്ര കായിക മത്സരങ്ങളിലെ ഏറ്റവും പുതിയ സംഭവവികാസങ്ങൾ.",
+      time: "6 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=400&h=250&fit=crop",
-      category: "Sports",
+      category: "കായികം",
       trending: 6
     }
   ];
@@ -68,10 +68,10 @@ const TrendingNews = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <TrendingUp className="h-6 w-6 text-primary" />
-          <h2 className="text-3xl font-bold font-serif text-foreground">Trending Now</h2>
+          <h2 className="text-3xl font-bold font-serif text-foreground">ട്രെൻഡിംഗ് ഇപ്പോൾ</h2>
         </div>
         <Button variant="ghost" className="group">
-          View All
+          എല്ലാം കാണുക
           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
         </Button>
       </div>

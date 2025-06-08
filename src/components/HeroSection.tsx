@@ -9,30 +9,30 @@ const HeroSection = () => {
   const featuredStories = [
     {
       id: 1,
-      title: "Global Climate Summit Reaches Historic Agreement",
-      excerpt: "World leaders unite on unprecedented climate action plan with binding commitments for carbon neutrality by 2050.",
-      author: "Sarah Johnson",
-      time: "2 hours ago",
+      title: "ആഗോള കാലാവസ്ഥാ ഉച്ചകോടി ചരിത്രപരമായ കരാറിലെത്തി",
+      excerpt: "2050-ഓടെ കാർബൺ ന്യൂട്രാലിറ്റിക്കായി ബൈൻഡിംഗ് പ്രതിബദ്ധതകളോടെ അഭൂതപൂർവമായ കാലാവസ്ഥാ പ്രവർത്തന പദ്ധതിയിൽ ലോക നേതാക്കൾ ഒന്നിച്ചു.",
+      author: "സാറാ ജോൺസൺ",
+      time: "2 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=500&fit=crop",
-      category: "Environment"
+      category: "പരിസ്ഥിതി"
     },
     {
       id: 2,
-      title: "Revolutionary AI Technology Transforms Healthcare",
-      excerpt: "New AI system demonstrates 95% accuracy in early disease detection, promising to revolutionize medical diagnostics.",
-      author: "Dr. Michael Chen",
-      time: "4 hours ago",
+      title: "വിപ്ലവകരമായ AI സാങ്കേതികവിദ്യ ആരോഗ്യരംഗത്തെ രൂപാന്തരപ്പെടുത്തുന്നു",
+      excerpt: "പുതിയ AI സിസ്റ്റം രോഗനിർണയത്തിൽ 95% കൃത്യത പ്രകടിപ്പിക്കുന്നു, മെഡിക്കൽ ഡയഗ്നോസ്റ്റിക്സിൽ വിപ്ലവം വാഗ്ദാനം ചെയ്യുന്നു.",
+      author: "ഡോ. മൈക്കൽ ചെൻ",
+      time: "4 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop",
-      category: "Technology"
+      category: "സാങ്കേതികവിദ്യ"
     },
     {
       id: 3,
-      title: "International Space Mission Discovers New Exoplanet",
-      excerpt: "Scientists confirm Earth-like planet in habitable zone, raising possibilities for extraterrestrial life.",
-      author: "Emma Rodriguez",
-      time: "6 hours ago",
+      title: "അന്താരാഷ്ട്ര ബഹിരാകാശ ദൗത്യം പുതിയ എക്സോപ്ലാനറ്റ് കണ്ടെത്തി",
+      excerpt: "ജീവസാധ്യമായ മേഖലയിൽ ഭൂമിക്ക് സമാനമായ ഗ്രഹം ശാസ്ത്രജ്ഞർ സ്ഥിരീകരിച്ചു, ബഹിരാകാശ ജീവിതത്തിന്റെ സാധ്യതകൾ ഉയർത്തുന്നു.",
+      author: "എമ്മാ റോഡ്രിഗസ്",
+      time: "6 മണിക്കൂർ മുമ്പ്",
       image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=800&h=500&fit=crop",
-      category: "Science"
+      category: "ശാസ്ത്രം"
     }
   ];
 
@@ -52,7 +52,7 @@ const HeroSection = () => {
           <div className="space-y-6 animate-fade-in">
             <div className="inline-block">
               <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                BREAKING
+                ബ്രേക്കിംഗ്
               </span>
             </div>
             
@@ -76,7 +76,7 @@ const HeroSection = () => {
             </div>
             
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Read Full Story
+              പൂർണ്ണ വാർത്ത വായിക്കുക
             </Button>
           </div>
 
